@@ -313,7 +313,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  border: 1px #777 solid;
+  border: 1px #bbb8b8 solid;
+  border-radius: 1rem;
   position: relative;
   cursor: pointer;
 }
@@ -472,7 +473,7 @@ body {
 
 /* Header responsive */
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 990px) {
   .header-box {
     display: flex;
     flex-direction: column;
@@ -550,6 +551,29 @@ body {
 
   .filter-index-box ul li a {
     font-size: 4rem;
+  }
+}
+
+/* Productos responsive */
+
+@media only screen and (max-width: 1200px){
+  .products-card-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .products-card-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 760px){
+  .products-card-box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
