@@ -523,6 +523,7 @@ body {
   border-radius: 1rem;
   border: 1px #777 solid;
   font-size: 1.2rem;
+  color: #777;
   font-weight: 500;
   transition: all 300ms ease;
 }
