@@ -16,7 +16,7 @@ body {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;  
+  min-height: 100vh;
 }
 
 /* HEADER */
@@ -142,10 +142,13 @@ body {
 }
 
 .nav-list-box form input {
-  outline: none;
   border: none;
   font-size: 1.5rem;
   color: #777;
+}
+
+.input-search {
+  outline: none !important;
 }
 
 .nav-list-box form input::-webkit-search-cancel-button {
@@ -184,7 +187,7 @@ body {
 .index-main h1 {
   margin-top: 2rem;
   font-size: 5rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -212,7 +215,7 @@ body {
 
 .filter-index-section h2 {
   font-size: 4rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 1rem;
@@ -268,7 +271,107 @@ body {
   color: #fff;
 }
 
-/* Productos */
+/* NOSOTROS */
+
+.aboutUs-head {
+  width: 100%;
+  height: 65rem;
+  background-image: url(../assets/fondo_nosotros.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+}
+
+.aboutUs-info-head {
+  margin-top: 15.2rem;
+}
+
+.aboutUs-info-head .aboutUs-info-title {
+  font-size: 8.5rem;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+.aboutUs-info-head .aboutUs-info-subtitle {
+  font-size: 4.2rem;
+  font-weight: 300;
+  margin-bottom: 3.2rem;
+}
+
+/* Diagonal box */
+
+.diagonal-line-below {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 10vh 100vw;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.diagonal-line-above {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 10vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.aboutUs-section {
+  margin-bottom: 5rem;
+}
+
+.about-box {
+  width: 90%;
+  max-width: 100rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 5.2rem 0;
+}
+
+.aboutUs-title {
+  text-align: center;
+  font-size: 5.6rem;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.aboutUs-info {
+  margin-bottom: 1.3rem;
+  font-weight: 300;
+  font-size: 2.8rem;
+  text-align: justify;
+  line-height: 2.4rem;
+  color: #302f2f;
+}
+
+.aboutUs-img-section {
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.aboutUs-img-box {
+  width: 100%;
+}
+
+.aboutUs-img-box img {
+  width: 100%;
+  height: 50rem;
+}
+
+/* PRODUCTOS */
 
 /* Filtro */
 
@@ -287,7 +390,7 @@ body {
 
 .products-box .filter-products h1 {
   font-size: 3rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -436,7 +539,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
 
 .img-contact-box {
@@ -449,10 +552,11 @@ body {
 }
 
 .img-contact-box img {
-  width: 100%;  
+  width: 100%;
+  height: 80rem;
 }
 
-.form-contact-box { 
+.form-contact-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -462,12 +566,41 @@ body {
 }
 
 .contact-title {
-  font-size: 5rem;    
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 600;
   margin-top: 2rem;
-  margin-bottom: 7rem;  
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contact-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #3b3a3a;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contact-direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #777;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .contact-form .contact-input-box {
@@ -496,7 +629,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  width: 30rem;  
+  width: 30rem;
   background-color: transparent;
   font-size: 2rem;
 }
@@ -509,7 +642,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  width: 30rem;  
+  width: 30rem;
   background-color: transparent;
   resize: none;
   font-size: 2rem;
@@ -518,18 +651,278 @@ body {
 .btn-contact {
   padding: 1rem;
   border: 1px #c5c2c2 solid;
-  border-radius: 1rem;  
-  font-weight: 600;  
+  border-radius: 1rem;
+  font-weight: 600;
   font-size: 1.5rem;
   cursor: pointer;
-  width: 20rem;
-  transition: all 300ms ease;  
+  width: 30rem;
+  transition: all 300ms ease;
 }
 
-.btn-contact:hover{
+.btn-contact:hover {
   color: #fff;
   background-color: #10463e;
+}
 
+/* INICIO SESIÓN */
+
+.logIn-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-logIn-box {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-logIn-box img {
+  width: 100%;
+  height: 80rem;
+}
+
+.form-logIn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 7.3% 0 4.7%;
+  width: 50%;
+}
+
+.logIn-title {
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+
+.logIn-form .logIn-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logIn-input-box {
+  margin-bottom: 4.5rem;
+}
+
+.logIn-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.logIn-input {
+  height: 3rem;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #777;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 30rem;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.btn-logIn {
+  padding: 1rem;
+  border: 1px #c5c2c2 solid;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 30rem;
+  transition: all 300ms ease;
+}
+
+.btn-logIn:hover {
+  color: #fff;
+  background-color: #10463e;
+}
+
+.pass-recover-link {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #0b868f;
+  font-weight: 600;
+}
+
+.pass-recover-link:hover {
+  color: #000000;
+}
+
+.create-account-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.create-account-box i {
+  font-size: 3rem;
+  color: #777;
+}
+
+.create-account-box p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.create-account-box a {
+  width: 20rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #10463e;
+  border: 1px #b9b9b9 solid;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+}
+
+.create-account-box a:hover {
+  background-color: #b4b4b4;
+  border: 1px #b9b9b9 solid;
+  color: #000000;
+}
+
+/* REGISTRO */
+
+.register-section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-register-box {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-register-box img {
+  width: 100%;
+  height: 80rem;
+}
+
+.form-register-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 7.3% 0 4.7%;
+  width: 50%;
+}
+
+.register-title {
+  font-size: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+
+.register-form .register-input-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-input-box {
+  margin-bottom: 4.5rem;
+}
+
+.register-label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #363636;
+}
+
+.register-input {
+  height: 3rem;
+  outline: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #777;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 30rem;
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+.btn-register {
+  padding: 1rem;
+  border: 1px #c5c2c2 solid;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 30rem;
+  transition: all 300ms ease;
+}
+
+.btn-register:hover {
+  color: #fff;
+  background-color: #10463e;
+}
+
+.log-account-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.log-account-box p {
+  font-size: 1.5rem;
+  color: #777;
+  font-weight: 500;
+}
+
+.log-account-box a {
+  border: 1px #c2c0c0 solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #10463e;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 20rem;
+}
+
+.log-account-box a:hover {
+  background-color: #b4b4b4;
+  border: 1px #b9b9b9 solid;
+  color: #000000;
 }
 
 /* FOOTER */
@@ -682,6 +1075,23 @@ body {
   }
 }
 
+/* Nosotros responsive */
+
+@media only screen and (max-width: 760px) {
+  .aboutUs-info-head .aboutUs-info-title {
+    font-size: 7rem;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+  }
+
+  .aboutUs-info-head .aboutUs-info-subtitle {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 3.2rem;
+  }
+}
+
 /* Productos responsive */
 
 @media only screen and (max-width: 1200px) {
@@ -713,15 +1123,63 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     row-gap: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .img-contact-box{
-    width: 100%;
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+  }
+
+  .img-contact-box {
+    display: none;
   }
 }
 
+/* Inicio de Sesión responsive */
+@media only screen and (max-width: 1200px) {
+  .logIn-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .img-logIn-box {
+    display: none;
+  }
+}
+
+/* Registro responsive */
+@media only screen and (max-width: 1200px) {
+  .register-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .pass-recover-link {
+    font-size: 1.3rem;
+  }
+
+  .img-register-box {
+    display: none;
+  }
+}
 
 /* footer responsive */
 
