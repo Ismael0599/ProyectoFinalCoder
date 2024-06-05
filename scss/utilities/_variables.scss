@@ -1,0 +1,24 @@
+// Variables
+
+$color-texto-hover: #219599;
+$color-texto: #444242;
+$borde-boton: 1px #777 solid;
+$background-boton-hover: #10463e;
+$color-boton-hover: #fff;
+$color-texto-boton: #777;
+$transition: all 300ms ease;
+
+
+// Media Queries
+
+$breakpoints: (
+  sm: 540px,
+  md: 768px,
+  lg: 1024px,
+);
+
+@mixin media-down($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
