@@ -1,24 +1,41 @@
-// Variables
+// ----- VARIABLES -----
 
+// Texto
 $color-texto-hover: #219599;
 $color-texto: #444242;
+
+// Botones
 $borde-boton: 1px #777 solid;
 $background-boton-hover: #10463e;
 $color-boton-hover: #fff;
 $color-texto-boton: #777;
+
+// Transition
 $transition: all 300ms ease;
 
+// ----- MIXIN'S -----
 
 // Media Queries
 
-$breakpoints: (
-  sm: 540px,
-  md: 768px,
-  lg: 1024px,
-);
-
-@mixin media-down($breakpoint) {
-  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+@mixin media($medida: 540px) {
+  @media screen and (max-width: $medida) {
     @content;
   }
+}
+
+// Flex
+
+@mixin flex($display, $direction, $justify, $align) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Grid
+
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
 }

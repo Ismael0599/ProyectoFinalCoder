@@ -1,28 +1,19 @@
 /* REGISTRO */
 
 .register-section {
+  @include flex(flex, row, center, center);
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  @include media-down(sm) {
+  @include media(800px) {
+    @include flex(flex, column, center, center);
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
     margin-bottom: 2rem;
   }
 
   .form-register-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex(flex, column, center, center);
     padding: 0 7.3% 0 4.7%;
     width: 50%;
 
@@ -33,14 +24,12 @@
       font-weight: 600;
       margin-top: 2rem;
       margin-bottom: 7rem;
+      text-align: center;
     }
 
     .register-form {
       .register-input-box {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        @include flex(flex, column, center, flex-start);        
         width: 100%;
         margin-bottom: 4.5rem;
 
@@ -66,7 +55,7 @@
 
       .btn-register {
         padding: 1rem;
-        border: 1px #c5c2c2 solid;
+        border: $borde-boton;
         border-radius: 1rem;
         font-weight: 600;
         font-size: 1.5rem;
@@ -82,10 +71,7 @@
     }
 
     .log-account-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flex(flex, column, center, center);
       margin-top: 2rem;
       text-align: center;
 
@@ -117,15 +103,13 @@
   }
 
   .img-register-box {
+    @include flex(flex, column, center, center);
     height: 100%;
     width: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;    
 
-    @include media-down(sm){
-        display: none;
+    @include media(800px) {
+      display: none;
     }
 
     img {
@@ -134,7 +118,3 @@
     }
   }
 }
-
-
-
-
