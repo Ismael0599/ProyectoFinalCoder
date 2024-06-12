@@ -22,7 +22,7 @@ html {
   @include flex(flex, row, space-between, center);
   padding: 0 5rem;
   height: 15rem;
-  background-color: #eaecec;
+  background-color: $background-header;
   color: #000000;
 
   .logo-box {
@@ -127,7 +127,7 @@ html {
 .nav-box {
   font-size: 2rem;
   padding: 1rem;
-  background-color: rgb(238, 238, 237) !important;
+  background-color: $background-header !important;
   .menu {
     display: none;
     font-size: 2.5rem;
@@ -152,14 +152,13 @@ html {
 
   .nav-list-box {
     font-weight: 500;
-    font-size: 2rem;
-    color: #020202;
+    font-size: 2rem;    
     margin-right: 2rem;
 
     a {
       font-weight: 500;
       font-size: 2rem;
-      color: $color-texto;
+      color: $color-texto-titulo;
       margin-right: 2rem;
       &:hover {
         color: $color-texto-hover;
@@ -206,7 +205,7 @@ html {
 /* FOOTER */
 
 .footer {
-  background-color: #0f1518;
+  background-color: $background-footer;
   margin-top: auto;
   width: 100%;
 
@@ -318,7 +317,7 @@ html {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.5rem;
-    background-color: #011218;
+    background-color: $background-footer-copy;
     color: #fff;
     font-family: "Courier New", Courier, monospace;
     text-align: center;

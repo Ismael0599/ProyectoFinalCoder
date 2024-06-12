@@ -25,6 +25,7 @@
       margin-top: 2rem;
       margin-bottom: 7rem;
       text-align: center;
+      color: $color-texto-titulo
     }
 
     .register-form {
@@ -36,7 +37,7 @@
         .register-label {
           font-size: 1.8rem;
           font-weight: 600;
-          color: #363636;
+          color: $color-text-label;
         }
 
         .register-input {

@@ -5,11 +5,11 @@
   margin: auto;
 
   .products-box {
-    @include flex(flex, column, center, center); 
+    @include flex(flex, column, center, center);
     padding: 5rem;
 
     .filter-products {
-      @include flex(flex, column, center, center); 
+      @include flex(flex, column, center, center);
       width: 100%;
 
       h1 {
@@ -24,7 +24,7 @@
       }
 
       ul {
-        @include flex(flex, row, center, center); 
+        @include flex(flex, row, center, center);
         list-style: none;
         padding: 0 5rem;
         gap: 2rem;
@@ -64,7 +64,7 @@
     }
 
     .products-card-box {
-      @include grid(4, 1rem);      
+      @include grid(4, 1rem);
       margin-top: 2rem;
       padding: 2rem;
 
@@ -82,9 +82,9 @@
 
       .cards-box {
         /* Cards */
-        @include flex(flex, column, center, center);        
+        @include flex(flex, column, center, center);
         padding: 1rem;
-        border: 1px #bbb8b8 solid;
+        border: $border-card;
         border-radius: 1rem;
         position: relative;
         cursor: pointer;
@@ -110,48 +110,60 @@
           margin-bottom: 1rem;
 
           img {
-            width: 25rem;
-            height: 12rem;
+            height: $img-height-card;
+            width: $img-width-card;
           }
         }
 
         .card-info {
+          @include flex(flex, column, center, center);
           width: 20rem;
           text-align: center;
 
-          h2 {
-            font-weight: 600;
-            font-size: 2rem;
-          }
-
-          p {
-            font-size: 1.5rem;
-          }
-
-          .cards-price {
-            font-size: 2rem !important;
-            font-weight: 600;
-
-            span {
-              text-decoration: line-through;
-              color: #777;
-              font-weight: 400;
+          .title-card-box {
+            h2 {
+              font-weight: 600;
+              font-size: 2.5rem;
+              color: $color-texto-titulo;
             }
           }
 
-          .btn-card-cart {
-            width: 20rem;
-            height: 3.5rem;
-            border-radius: 1rem;
-            border: $borde-boton;
-            font-size: 1.2rem;
-            color: $color-texto-boton;
-            font-weight: 500;
-            transition: $transition;
+          .description-card-box {
+            height: 12rem;
+            p {
+              font-size: 1.5rem;
+              color: $color-texto;
+            }
+          }
 
-            &:hover {
-              color: $color-boton-hover;
-              background-color: $background-boton-hover;
+          .price-card-box {
+            .cards-price {
+              font-size: 2rem !important;
+              font-weight: 600;
+
+              span {
+                text-decoration: line-through;
+                color: #777;
+                font-weight: 400;
+              }
+            }
+          }
+
+          .boton-card-box {
+            .btn-card-cart {
+              width: 20rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              border: $borde-boton;
+              font-size: 1.2rem;
+              color: $color-texto-boton;
+              font-weight: 500;
+              transition: $transition;
+
+              &:hover {
+                color: $color-boton-hover;
+                background-color: $background-boton-hover;
+              }
             }
           }
         }
