@@ -85,7 +85,7 @@
         @include flex(flex, column, center, center);
         padding: 1rem;
         border: $border-card;
-        border-radius: 1rem;
+        border-radius: 3rem;
         position: relative;
         cursor: pointer;
 
@@ -97,8 +97,8 @@
           border-radius: 1rem;
           width: 5rem;
           text-align: center;
-          top: 2%;
-          left: 2%;
+          top: 3%;
+          left: 4%;
 
           &:hover {
             background-color: #021b18;
@@ -106,7 +106,7 @@
         }
 
         .card-img-box {
-          margin-top: 3rem;
+          margin-top: 4rem;
           margin-bottom: 1rem;
 
           img {

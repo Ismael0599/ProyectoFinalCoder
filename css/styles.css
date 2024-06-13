@@ -699,7 +699,7 @@ html body {
   align-items: center;
   padding: 1rem;
   border: 1px #bbb8b8 solid;
-  border-radius: 1rem;
+  border-radius: 3rem;
   position: relative;
   cursor: pointer;
 }
@@ -711,18 +711,18 @@ html body {
   border-radius: 1rem;
   width: 5rem;
   text-align: center;
-  top: 2%;
-  left: 2%;
+  top: 3%;
+  left: 4%;
 }
 .products-section .products-box .products-card-box .cards-box .product-discount:hover {
   background-color: #021b18;
 }
 .products-section .products-box .products-card-box .cards-box .card-img-box {
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 .products-section .products-box .products-card-box .cards-box .card-img-box img {
-  height: 12rem;
+  height: 15rem;
   width: 25rem;
 }
 .products-section .products-box .products-card-box .cards-box .card-info {
